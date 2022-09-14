@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "budgetName": {
+      "value": "SubscriptionBudget"
+    },
+    "amount": {
+      "value": "50"
+    },
+    "contactEmails": {
+      "value": ["michael.crawford@neudesic.com", "mcrawford@mjcconsulting.com", "4156525483@txt.att.net"]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# Script to create a Subscription Budget
+#
+
+# Deploy Resources
+az deployment sub create --name SubscriptionBudgetDeployment \
+                         --location westus2 \
+                         --template-file subcription-budget.bicep \
+                         --parameters @subcription-budget.parameters.json
+
+# Confirm Resources
+az deployment sub show --name SubscriptionBudgetDeployment

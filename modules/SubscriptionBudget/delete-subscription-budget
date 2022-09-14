@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# Script to delete a Subscription Budget
+#
+
+# Delete Resources
+az deployment sub delete --name SubscriptionBudgetDeployment

@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# Script to delete a Resource Group for Budget related Action Groups
+#
+
+# Delete Resources
+az group delete --name Budgets

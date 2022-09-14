@@ -1,0 +1,4 @@
+# Directories to exclude during code development
+**/save/*
+**/new/*
+**/old/*

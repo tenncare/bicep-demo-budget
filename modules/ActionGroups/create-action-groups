@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# Script to create a Resource Group for Budget related Action Groups, then create the Action Groups
+#
+
+# Deploy Resources
+az group create --Name Budgets \
+                --Location westus
+
+az deployment group create --name ActionGroupsDeployment \
+                           --resource-group Budgets \
+                           --template-file action-groups.bicep \
+                           --parameters @action-groups.parameters.json
+
+# Confirm Resources
+az deployment group show --name ActionGroupsDeployment \
+                         --resource-group Budgets
