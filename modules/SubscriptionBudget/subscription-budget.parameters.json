@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "budgetName": {
-      "value": "SubscriptionBudget"
+      "value": "Neudesic-MCrawford-Sandbox-Subscription-Budget"
     },
     "amount": {
-      "value": "50"
+      "value": 50
     },
     "contactEmails": {
       "value": ["michael.crawford@neudesic.com", "mcrawford@mjcconsulting.com", "4156525483@txt.att.net"]

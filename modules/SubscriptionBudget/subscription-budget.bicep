@@ -15,7 +15,7 @@ param amount int = 50
 param timeGrain string = 'Monthly'
 
 @description('The start date must be first of the month in YYYY-MM-DD format. Future start date should not be more than three months. Past start date should be selected within the timegrain preiod.')
-param startDate string = utcNow('yyyy-MM-dd')
+param startDate string = '${utcNow('yyyy-MM')}-01'
 
 @description('The end date for the budget in YYYY-MM-DD format. If not provided, we default this to 10 years from the start date.')
 param endDate string = '${split(dateTimeAdd(startDate, 'P10Y'), 'T')[0]}'
